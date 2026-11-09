@@ -95,3 +95,6 @@ https://walli1912.github.io/jw/listas/SeriesWhatPeersSay.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 9",¿Qué ha sido de ellos?
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/SeriesWhereAreTheyNow.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 28",La pizarra animada
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/SeriesWhiteboard.m3u
