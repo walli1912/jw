@@ -1,0 +1,75 @@
+name: Actualizar catálogo JW
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:23 en Argentina (UTC-3). GitHub puede demorar la ejecución.
+    - cron: '23 12 * * *'
+  push:
+    branches: [main]
+    paths:
+      - generar_lista_enriquecida4.py
+      - test_catalogo.py
+      - .github/workflows/actualizar-catalogo.yml
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: actualizar-catalogo-jw
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Preparar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Comprobar generación y protección del catálogo anterior
+        run: python -m unittest test_catalogo.py
+      - name: Consultar JW y generar listas e historial
+        id: catalogo
+        continue-on-error: true
+        env:
+          JW_BASE_URL: https://walli1912.github.io/jw/
+        run: python -u generar_lista_enriquecida4.py
+      - name: Guardar resultados en GitHub
+        id: guardar
+        if: always() && steps.catalogo.outcome != 'skipped' && steps.catalogo.outcome != ''
+        env:
+          RESULTADO: ${{ steps.catalogo.outcome }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "$RESULTADO" = "success" ]; then
+            git add -- inicio.m3u lista_completa_smarttv.m3u catalogo_estado.json listas/ historial/
+            git add -- 'JW_AUTO_*.json'
+          else
+            # Si falla JW, solo se guardan los logs: las listas publicadas permanecen intactas.
+            if [ -d historial ]; then git add -- historial/; fi
+          fi
+          if git diff --cached --quiet; then
+            echo "cambio=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Actualiza catálogo JW e historial"
+            git push origin HEAD:main
+            echo "cambio=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publicar los cambios en GitHub Pages
+        if: steps.guardar.outputs.cambio == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+      - name: Señalar un error en la consulta
+        if: always() && steps.catalogo.outcome == 'failure'
+        run: |
+          echo "La actualización falló. Consultá el historial. Se conservó el catálogo anterior."
+          exit 1
