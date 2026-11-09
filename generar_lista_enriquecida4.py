@@ -75,10 +75,12 @@ def clave_valida(clave):
     return clave
 
 
-def consultar(clave, offset=0):
+def consultar(clave, offset=0, solo_estructura=False):
     clave_valida(clave)
-    url = BASE + quote(clave, safe='') + '?' + urlencode(
-        {'detailed': 1, 'offset': offset, 'limit': 500, 'clientType': 'www'})
+    parametros = {'detailed': 1, 'offset': offset, 'limit': 500, 'clientType': 'www'}
+    if solo_estructura:
+        parametros['mediaLimit'] = 0
+    url = BASE + quote(clave, safe='') + '?' + urlencode(parametros)
     for intento in range(3):
         try:
             req = Request(url, headers={'User-Agent': 'Mozilla/5.0', 'Cache-Control': 'no-cache'})
@@ -121,6 +123,13 @@ def descargar_categoria(clave):
         data['pagination'] = {'totalCount': len(videos), 'offset': 0, 'limit': max(len(videos), 1)}
     elif videos:
         raise ValueError('Falta la paginación: ' + clave)
+    if cat.get('subcategories'):
+        # Sin mediaLimit=0 JW recorta algunas listas de subcategorías (p. ej., a seis).
+        estructura = consultar(clave, solo_estructura=True)['category']
+        hijos = estructura.get('subcategories')
+        if not isinstance(hijos, list):
+            raise ValueError('Falta la estructura completa de subcategorías: ' + clave)
+        cat['subcategories'] = hijos
     return data
 
 
@@ -328,7 +337,7 @@ def registrar(carpeta, actual=None, anterior=None, cambios=None, error=None):
                        f'Categorías: {len(actual["categories"])}'])
         if cambios['initial']:
             lineas.append('Primera ejecución: se guardó el catálogo de referencia para futuras comparaciones.')
-        for campo, titulo, fuente in [('added', 'VIDEOS NUEVOS', actual['videos']),
+        for campo, titulo, fuente in [('added', 'VIDEOS INCORPORADOS A LA LISTA', actual['videos']),
                                      ('removed', 'VIDEOS RETIRADOS', (anterior or {}).get('videos', {})),
                                      ('changed', 'VIDEOS MODIFICADOS (título; enlace; calidad o categorías)', actual['videos'])]:
             lineas.extend(['', f'{titulo}: {len(cambios[campo])}'])

@@ -44,7 +44,7 @@ class CatalogoTest(unittest.TestCase):
         self.assertEqual(jw.elegir_medio(v)['label'], '720p')
 
     def test_arbol_y_orden(self):
-        with patch.object(jw, 'consultar', side_effect=lambda k, offset=0: copy.deepcopy(documentos()[k])):
+        with patch.object(jw, 'consultar', side_effect=lambda k, offset=0, **kw: copy.deepcopy(documentos()[k])):
             docs = jw.descargar_arbol('VideoOnDemand', workers=2)
         self.assertNotIn('VODAudioDescriptions', docs)
         nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
@@ -64,6 +64,13 @@ class CatalogoTest(unittest.TestCase):
                 for linea in lista.read_text().splitlines():
                     if linea.startswith('#EXTINF'):
                         self.assertEqual(linea.count(','), 1)
+
+    def test_estructura_completa(self):
+        parcial = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026')])
+        completa = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026'), ('2025Convention', 'Asamblea 2025')])
+        with patch.object(jw, 'consultar', side_effect=[parcial, completa]) as mock:
+            self.assertEqual(len(jw.descargar_categoria('P')['category']['subcategories']), 2)
+            mock.assert_any_call('P', solo_estructura=True)
 
     def test_paginacion(self):
         a = respuesta('S', 'Serie', [video('uno')]);a['pagination']['totalCount'] = 2
