@@ -1,5 +1,7 @@
-#EXTM3U
-#EXTINF:0 type="playlist" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwb-142/univ/art/jwb-142_univ_wss_04_sm.jpg",Un día en la vida de...
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 3",Un día en la vida de...
+#EXTSIZE: Medium
 https://walli1912.github.io/jw/vida.m3u
-#EXTINF:0 type="playlist" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/1112023101/univ/art/1112023101_univ_wss_sm.jpg",Las buenas noticias según Jesús
+#EXTINF:0 type="playlist" description="Cantidad: 9",Las buenas noticias según Jesús
+#EXTSIZE: Medium
 https://walli1912.github.io/jw/jesus.m3u
