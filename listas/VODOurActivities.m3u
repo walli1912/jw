@@ -1,0 +1,22 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 20",Traducción
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesTranslation.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 21",Producción de programas en audio y video
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesAVProduction.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 13",Producción y distribución de publicaciones
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesPrintingShipping.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 45",Obras de construcción
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesConstruction.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 25",Labores de socorro
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesReliefWork.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 13",Escuelas bíblicas y capacitación
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesTheoSchools.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 39",Eventos especiales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODActivitiesSpecialEvents.m3u

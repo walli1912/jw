@@ -1,0 +1,25 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 67",Libros de la Biblia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/BibleBooks.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 27",La lectura y el estudio de la Biblia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleReadingStudy.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 41",Enseñanzas bíblicas
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleTeachings.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 32",Relatos bíblicos
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleAccounts.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 23",Personas; lugares y cosas
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleMedia.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 24",Traducciones de la Biblia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleTranslations.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 130",Siga los consejos de la Biblia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBiblePrinciples.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 32",La creación
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBibleCreation.m3u

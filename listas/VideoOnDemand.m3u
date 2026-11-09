@@ -1,0 +1,40 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 259",JW Broadcasting
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODStudio.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 151",Niños
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODChildren.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 78",Jóvenes
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODTeenagers.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 65",Familia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODFamily.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 723",Programas espirituales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODProgramsEvents.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 173",Qué hacemos
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOurActivities.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 376",Nuestras reuniones y ministerio
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMinistry.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 163",Nuestra organización
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOurOrganization.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 370",La Biblia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODBible.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 63",Producciones audiovisuales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMovies.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 698",Series
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODSeries.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 433",Música
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMusicVideos.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 359",Entrevistas y experiencias
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODIntExp.m3u

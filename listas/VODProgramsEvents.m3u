@@ -1,0 +1,19 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 420",Adoración matutina
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODPgmEvtMorningWorship.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 40",Programas especiales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODPgmEvtSpecial.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 139",Graduación de Galaad
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODPgmEvtGilead.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 90",Reunión anual
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODPgmEvtAnnMtg.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 6",Asamblea regional 2026 | Felices para siempre
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/2026Convention.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 28",Asamblea regional 2025 | Adoración pura
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/2025Convention.m3u

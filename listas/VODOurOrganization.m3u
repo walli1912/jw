@@ -1,0 +1,19 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 61",Informes de diferentes partes del mundo
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/Reports.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 18",Betel
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOrgBethel.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 11",Organizados para efectuar nuestra predicación
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/AccomplishMinistry.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 35",Historia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOrgHistory.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 27",Asuntos legales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOrgLegal.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 11",Medicina sin sangre
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOrgBloodlessMedicine.m3u

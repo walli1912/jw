@@ -1,0 +1,7 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 70",Videos educativos
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/BJF.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 85",Canciones
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/ChildrenSongs.m3u

@@ -1,0 +1,19 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 123",Canciones originales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODOriginalSongs.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 164",Cantemos con gozo a Jehová (para las reuniones)
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODSJJMeetings.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 85",Canciones para niños
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/ChildrensSongs.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 54",Preludios musicales de las asambleas regionales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODConvMusic.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 4",Interpretaciones musicales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/MakingMusic.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 3",Cantemos a Jehová
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODSingToJah.m3u

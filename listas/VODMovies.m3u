@@ -1,0 +1,13 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 9",Las buenas noticias según Jesús
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/DramasGoodNews.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 22",De tiempos bíblicos
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMoviesBibleTimes.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 11",De la actualidad
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMoviesModernDay.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 21",Extras
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODMoviesExtras.m3u

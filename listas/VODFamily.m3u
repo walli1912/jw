@@ -1,0 +1,13 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 40",Retos familiares
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/FamilyChallenges.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 12",El noviazgo y el matrimonio
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/FamilyDatingMarriage.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 7",Adoración en familia
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/FamilyWorship.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 7",Producciones audiovisuales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/FamilyMovies.m3u

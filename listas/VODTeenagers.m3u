@@ -1,0 +1,16 @@
+#EXTM3U size="medium"
+#EXTINF:0 type="playlist" description="Cantidad: 19",Progreso espiritual
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/TeenSpiritualGrowth.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 15",Vida social
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/TeenSocialLife.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 12",Metas
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/TeenGoals.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 32",Entrevistas y experiencias
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/TeenWhatPeersSay.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 2",Producciones audiovisuales
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/TeenMovies.m3u
