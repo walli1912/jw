@@ -34675,5 +34675,55 @@
         "Videos con audiodescripciones / Asamblea regional 2016 | Seamos leales a Jehová"
       ]
     }
+  },
+  "showcases": {
+    "FeaturedLibraryVideos": [
+      {
+        "id": "docid-502015161_S_1_VIDEO",
+        "title": "Cómo se hizo la nueva Biblia"
+      }
+    ],
+    "LatestVideos": [
+      {
+        "id": "pub-ebtv_S_14_VIDEO",
+        "title": "Nuestro planeta tiene futuro"
+      },
+      {
+        "id": "pub-jwb-143_S_1_VIDEO",
+        "title": "JW Broadcasting: Noviembre de 2026"
+      },
+      {
+        "id": "pub-jwbvod26_S_38_VIDEO",
+        "title": "Mark Scott: “La esperanza no decepciona” (Rom. 5:5)"
+      },
+      {
+        "id": "pub-jwbvod26_S_39_VIDEO",
+        "title": "Mark Sanderson: Su liberación se acerca (Luc. 21:28)"
+      },
+      {
+        "id": "pub-jwbvod26_S_45_VIDEO",
+        "title": "Christopher Mavor: Esperemos con paciencia el día de Jehová (Mat. 24:13)"
+      },
+      {
+        "id": "pub-jwbvod26_S_47_VIDEO",
+        "title": "Peter Price: Seamos leales a Jehová cuando un ser querido nos pone a prueba (Job 2:9, 10)"
+      },
+      {
+        "id": "pub-ljf_S_11_VIDEO",
+        "title": "Aprende de los amigos de Jehová: Eliseo"
+      },
+      {
+        "id": "pub-mwbv_S_202611_1_VIDEO",
+        "title": "Nuestras donaciones le dan gloria a Jehová"
+      },
+      {
+        "id": "pub-jwbvod26_S_43_VIDEO",
+        "title": "Disfruta del ministerio: Luchar contra nuestras inseguridades"
+      },
+      {
+        "id": "pub-jwbvod26_S_44_VIDEO",
+        "title": "Disfruta del ministerio: Esforzarse por hacer más"
+      }
+    ]
   }
 }

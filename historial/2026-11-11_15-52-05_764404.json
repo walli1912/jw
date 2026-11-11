@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-11T15:52:05.764404+00:00",
+  "success": true,
+  "initial": false,
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [
+    "FeaturedLibraryVideos",
+    "LatestVideos"
+  ],
+  "total_videos": 4086,
+  "total_categories": 174
+}
