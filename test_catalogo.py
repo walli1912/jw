@@ -95,6 +95,37 @@ class CatalogoTest(unittest.TestCase):
         self.assertNotIn('VODAudioDescriptions', nodos['Series']['children'])
         self.assertIn('VODAudioDescriptions', nodos['VideoOnDemand']['children'])
 
+    def test_portada_tres_botones_y_biblioteca_dentro(self):
+        docs = documentos()
+        docs['FeaturedLibraryVideos'] = respuesta('FeaturedLibraryVideos', 'Recomendados', [video('nuevo')])
+        docs['LatestVideos'] = respuesta('LatestVideos', 'Últimos videos', [video('episodio'), video('viejo')])
+        nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d)
+            jw.escribir_listas(p, nodos, 'VideoOnDemand', 'https://example.org/')
+            portada = (p/'inicio.m3u').read_text()
+            titulos = [l.split(',',1)[1] for l in portada.splitlines() if l.startswith('#EXTINF')]
+            self.assertEqual(titulos, ['RECOMENDADOS', 'ÚLTIMOS VIDEOS', 'BIBLIOTECA JW'])
+            biblioteca = (p/'listas/VideoOnDemand.m3u').read_text()
+            self.assertIn('Programas', biblioteca)
+            self.assertNotIn('RECOMENDADOS', biblioteca)
+            self.assertEqual((p/'listas/LatestVideos.m3u').read_text().count('#EXTINF'),2)
+        estado = jw.inventario(nodos, 'VideoOnDemand')
+        nuevo = copy.deepcopy(estado)
+        nuevo['showcases']['LatestVideos'].reverse()
+        self.assertEqual(jw.comparar(estado, nuevo)['changed_showcases'], ['LatestVideos'])
+
+    def test_recomendados_respeta_seleccion_editorial_y_audiodescripciones(self):
+        rec = respuesta('FeaturedLibraryVideos', 'Recomendados', [video('uno'),video('dos')])
+        rec['category']['tags'] = ['LimitToOne']
+        with patch.object(jw, 'consultar', return_value=rec), patch.object(jw, 'descargar_categoria', return_value=respuesta('LatestVideos','Últimos videos',[])):
+            docs = jw.descargar_vidrieras()
+        self.assertEqual(len(docs['FeaturedLibraryVideos']['category']['media']),1)
+        docs.update(documentos())
+        docs['LatestVideos']['category']['media'] = [video('ad', 'Un video (audiodescripción)'),video('nuevo')]
+        nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
+        self.assertEqual([v['id'] for v in nodos['LatestVideos']['videos']], ['nuevo'])
+
     def test_estructura_completa(self):
         parcial = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026')])
         completa = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026'), ('2025Convention', 'Asamblea 2025')])
@@ -110,7 +141,8 @@ class CatalogoTest(unittest.TestCase):
         with patch.object(jw, 'consultar', side_effect=[copy.deepcopy(a), respuesta('S', 'Serie', [])]):
             with self.assertRaises(ValueError):jw.descargar_categoria('S')
 
-    def test_logs_y_error_conserva_archivos(self):
+    @patch.object(jw, 'descargar_vidrieras', return_value={})
+    def test_logs_y_error_conserva_archivos(self, _vidrieras):
         with tempfile.TemporaryDirectory() as d:
             p = Path(d)
             with patch.object(jw, 'descargar_arbol', return_value=documentos()):

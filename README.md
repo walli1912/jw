@@ -8,7 +8,7 @@ Agregar como lista externa en SS IPTV:
 
 **https://walli1912.github.io/jw/inicio.m3u**
 
-La dirección es permanente. Las carpetas se muestran como botones medianos, sin portada, con nombre y cantidad de videos distintos dentro de la sección. Los videos tienen miniaturas cuando JW las ofrece. Se prefiere 1080p y se utiliza 720p si no hay 1080p; no cambia de calidad durante la reproducción. Se incluye la sección Videos con audiodescripciones con sus subcategorías y videos. Las versiones con audiodescripción aparecen únicamente dentro de esa sección, incluso si JW las enlaza también en otras categorías, y se evita repetir resoluciones dentro de cada categoría. Las 14 categorías principales respetan los nombres y el orden de la cuadrícula de JW.ORG. Un video puede pertenecer a distintas categorías, como en JW.
+La dirección es permanente. La primera pantalla contiene, en este orden: **RECOMENDADOS**, **ÚLTIMOS VIDEOS**, **BIBLIOTECA JW**. Dentro de BIBLIOTECA JW están las 14 categorías principales. Las selecciones de portada se consultan directamente en JW: FeaturedLibraryVideos y LatestVideos, conservando su orden y límites editoriales. No se agregan automáticamente otras selecciones temporales. Las carpetas se muestran como botones medianos, sin portada, con nombre y cantidad de videos distintos dentro de la sección. Los videos tienen miniaturas cuando JW las ofrece. Se prefiere 1080p y se utiliza 720p si no hay 1080p; no cambia de calidad durante la reproducción. Se incluye la sección Videos con audiodescripciones con sus subcategorías y videos. Las versiones con audiodescripción aparecen únicamente dentro de esa sección, incluso si JW las enlaza también en otras categorías, y se evita repetir resoluciones dentro de cada categoría. Las 14 categorías principales respetan los nombres y el orden de la cuadrícula de JW.ORG. Un video puede pertenecer a distintas categorías, como en JW.
 
 ## Actualización automática y manual
 
@@ -22,7 +22,7 @@ El flujo prueba el script, consulta todas las categorías, guarda los JSON `JW_A
 
 **https://walli1912.github.io/jw/historial/**
 
-Cada ejecución tiene un registro TXT legible y un JSON con sus resultados. Se registran videos nuevos, retirados y modificados, además de categorías nuevas/retiradas. La primera ejecución establece la referencia inicial; no presenta todos los videos anteriores como novedades. Los identificadores estables evitan considerar nuevo un video solo porque cambió su enlace o su calidad.
+Cada ejecución tiene un registro TXT legible y un JSON con sus resultados. Se registran videos nuevos, retirados y modificados, además de categorías nuevas/retiradas y cambios en las selecciones de Recomendados y Últimos videos. La primera ejecución establece la referencia inicial; no presenta todos los videos anteriores como novedades. Los identificadores estables evitan considerar nuevo un video solo porque cambió su enlace o su calidad.
 
 ## Ejecutar en la PC
 

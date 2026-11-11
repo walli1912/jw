@@ -82,6 +82,27 @@ CATEGORIAS_PRINCIPALES = (
 )
 
 
+SECCIONES_PORTADA = (
+    ('FeaturedLibraryVideos', 'RECOMENDADOS'),
+    ('LatestVideos', 'ÚLTIMOS VIDEOS'),
+)
+
+
+def descargar_vidrieras():
+    # La página de videos usa esta selección; no la de la portada general de Biblioteca.
+    recomendados = consultar('FeaturedLibraryVideos')
+    cat = recomendados['category']
+    if not isinstance(cat.get('media'), list):
+        raise ValueError('Respuesta inesperada en Recomendados')
+    # Respetar el límite editorial que usa JW en la portada de su videoteca.
+    if 'LimitToOne' in (cat.get('tags') or []):
+        cat['media'] = cat['media'][:1]
+    elif 'LimitToFive' in (cat.get('tags') or []):
+        cat['media'] = cat['media'][:5]
+    return {'FeaturedLibraryVideos': recomendados,
+            'LatestVideos': descargar_categoria('LatestVideos')}
+
+
 def es_audiodescripcion(texto):
     texto = ''.join(c for c in unicodedata.normalize('NFKD', str(texto or ''))
                     if not unicodedata.combining(c)).casefold()
@@ -308,19 +329,24 @@ def inventario(nodos, raiz):
     visitar(raiz)
     for v in videos.values():
         v['categories'] = sorted(set(v['categories']))
-    return {'root': raiz, 'categories': categorias, 'videos': videos}
+    vidrieras = {k: [{'id': v['id'], 'title': v['title']} for v in nodos[k]['videos']]
+                 for k, _ in SECCIONES_PORTADA if k in nodos}
+    return {'root': raiz, 'categories': categorias, 'videos': videos, 'showcases': vidrieras}
 
 
 def comparar(anterior, actual):
     if anterior is None:
         return {'initial': True, 'added': [], 'removed': [], 'changed': [],
-                'new_categories': list(actual['categories']), 'removed_categories': []}
+                'new_categories': list(actual['categories']), 'removed_categories': [],
+                'changed_showcases': list(actual.get('showcases', {}))}
     antes, ahora = anterior['videos'], actual['videos']
     return {'initial': False, 'added': sorted(ahora.keys() - antes.keys()),
             'removed': sorted(antes.keys() - ahora.keys()),
             'changed': sorted(k for k in ahora.keys() & antes.keys() if antes[k] != ahora[k]),
             'new_categories': sorted(actual['categories'].keys() - anterior['categories'].keys()),
-            'removed_categories': sorted(anterior['categories'].keys() - actual['categories'].keys())}
+            'removed_categories': sorted(anterior['categories'].keys() - actual['categories'].keys()),
+            'changed_showcases': [k for k, v in actual.get('showcases', {}).items()
+                                  if anterior.get('showcases', {}).get(k) != v]}
 
 
 def texto_seguro(texto):
@@ -347,6 +373,20 @@ def escribir_listas(destino, nodos, raiz, base_url):
         (carpeta / (clave + '.m3u')).write_text(texto, encoding='utf-8')
         if clave == raiz:
             (destino / 'inicio.m3u').write_text(texto, encoding='utf-8')
+    if raiz == CATEGORIA_PRINCIPAL and all(k in nodos for k, _ in SECCIONES_PORTADA):
+        portada = ['#EXTM3U size="medium"']
+        for clave, nombre in SECCIONES_PORTADA:
+            cantidad = len(nodos[clave]['videos'])
+            portada.extend([f'#EXTINF:0 type="playlist" description="Cantidad: {cantidad}",{nombre}',
+                            '#EXTSIZE: Medium', base_url + 'listas/' + clave + '.m3u'])
+            # Una selección temporalmente vacía sigue siendo navegable.
+            archivo = carpeta / (clave + '.m3u')
+            if not archivo.exists():
+                archivo.write_text('#EXTM3U size="medium"\n', encoding='utf-8')
+        cantidad = len(nodos[raiz]['children'])
+        portada.extend([f'#EXTINF:0 type="playlist" description="Cantidad: {cantidad} carpetas",BIBLIOTECA JW',
+                        '#EXTSIZE: Medium', base_url + 'listas/' + raiz + '.m3u'])
+        (destino / 'inicio.m3u').write_text('\n'.join(portada) + '\n', encoding='utf-8')
     (destino / '.nojekyll').write_text('')
 
 
@@ -395,6 +435,11 @@ def registrar(carpeta, actual=None, anterior=None, cambios=None, error=None):
                                      ('removed_categories', 'CATEGORÍAS RETIRADAS', (anterior or {}).get('categories', {}))]:
             lineas.extend(['', f'{titulo}: {len(cambios[campo])}'])
             lineas.extend('- ' + fuente[k]['path'] for k in cambios[campo])
+        if cambios.get('changed_showcases'):
+            lineas.extend(['', 'SELECCIONES DE LA PORTADA ACTUALIZADAS'])
+            for clave in cambios['changed_showcases']:
+                lineas.append(dict(SECCIONES_PORTADA).get(clave, clave))
+                lineas.extend('- ' + v['title'] for v in actual['showcases'][clave])
     texto = '\n'.join(lineas) + '\n'
     (historial / (nombre + '.txt')).write_text(texto, encoding='utf-8')
     (historial / (nombre + '.json')).write_text(json.dumps(datos, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -419,6 +464,8 @@ def ejecutar(carpeta, base_url=URL_PUBLICA, raiz=CATEGORIA_PRINCIPAL, workers=4)
         estado = carpeta / 'catalogo_estado.json'
         anterior = json.loads(estado.read_text(encoding='utf-8')) if estado.exists() else None
         documentos = descargar_arbol(raiz, workers)
+        if raiz == CATEGORIA_PRINCIPAL:
+            documentos.update(descargar_vidrieras())
         nodos = preparar_catalogo(documentos, raiz)
         actual = inventario(nodos, raiz)
         cambios = comparar(anterior, actual)
