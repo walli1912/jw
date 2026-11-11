@@ -38,3 +38,6 @@ https://walli1912.github.io/jw/listas/VODMusicVideos.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 359",Entrevistas y experiencias
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODIntExp.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 829",Videos con audiodescripciones
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/VODAudioDescriptions.m3u
