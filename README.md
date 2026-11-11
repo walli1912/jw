@@ -8,7 +8,7 @@ Agregar como lista externa en SS IPTV:
 
 **https://walli1912.github.io/jw/inicio.m3u**
 
-La dirección es permanente. Las carpetas se muestran como botones medianos, sin portada, con nombre y cantidad de videos distintos dentro de la sección. Los videos tienen miniaturas cuando JW las ofrece. Se prefiere 1080p y se utiliza 720p si no hay 1080p; no cambia de calidad durante la reproducción. Se incluye la sección Videos con audiodescripciones con sus subcategorías y videos, y se evita repetir resoluciones dentro de cada categoría. Las 14 categorías principales respetan los nombres y el orden de la cuadrícula de JW.ORG. Un video puede pertenecer a distintas categorías, como en JW.
+La dirección es permanente. Las carpetas se muestran como botones medianos, sin portada, con nombre y cantidad de videos distintos dentro de la sección. Los videos tienen miniaturas cuando JW las ofrece. Se prefiere 1080p y se utiliza 720p si no hay 1080p; no cambia de calidad durante la reproducción. Se incluye la sección Videos con audiodescripciones con sus subcategorías y videos. Las versiones con audiodescripción aparecen únicamente dentro de esa sección, incluso si JW las enlaza también en otras categorías, y se evita repetir resoluciones dentro de cada categoría. Las 14 categorías principales respetan los nombres y el orden de la cuadrícula de JW.ORG. Un video puede pertenecer a distintas categorías, como en JW.
 
 ## Actualización automática y manual
 

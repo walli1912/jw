@@ -208,6 +208,23 @@ def identidad(video, url):
 
 
 def preparar_catalogo(documentos, raiz):
+    # La pertenencia al árbol oficial AD también identifica videos sin marca en el título.
+    categorias_ad = set()
+
+    def marcar_ad(clave):
+        if clave in categorias_ad or clave not in documentos:
+            return
+        categorias_ad.add(clave)
+        for sub in documentos[clave]['category'].get('subcategories') or []:
+            marcar_ad(sub['key'])
+
+    marcar_ad('VODAudioDescriptions')
+    ids_ad = set()
+    for clave in categorias_ad:
+        for video in documentos[clave]['category'].get('media') or []:
+            medio = elegir_medio(video)
+            if medio:
+                ids_ad.add(identidad(video, medio['progressiveDownloadURL']))
     nodos = {}
     for clave, data in documentos.items():
         cat = data['category']
@@ -219,6 +236,8 @@ def preparar_catalogo(documentos, raiz):
                 continue
             url = medio['progressiveDownloadURL']
             ident = identidad(v, url)
+            if clave not in categorias_ad and (es_audiodescripcion(v.get('title')) or ident in ids_ad):
+                continue
             if ident in vistos or url in urls:
                 continue
             titulo = str(v.get('title') or '').strip()
@@ -229,6 +248,10 @@ def preparar_catalogo(documentos, raiz):
             seleccion.append({'id': ident, 'title': titulo, 'url': url,
                               'quality': str(medio.get('label') or ''), 'logo': elegir_imagen(v)})
         hijos = [s['key'] for s in cat.get('subcategories') or [] if s['key'] in documentos]
+        if clave not in categorias_ad:
+            # No se ofrecen accesos a las secciones AD desde otras carpetas.
+            hijos = [h for h in hijos if h not in categorias_ad or
+                     (clave == CATEGORIA_PRINCIPAL and h == 'VODAudioDescriptions')]
         nodos[clave] = {'name': str(cat.get('name') or clave), 'children': hijos, 'videos': seleccion}
     if raiz == CATEGORIA_PRINCIPAL:
         nombres = dict(CATEGORIAS_PRINCIPALES)

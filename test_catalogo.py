@@ -50,7 +50,7 @@ class CatalogoTest(unittest.TestCase):
         self.assertIn('VODAudioDescriptions', docs)
         nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
         self.assertEqual(nodos['VideoOnDemand']['count'], 4)
-        self.assertEqual(len(nodos['Series']['videos']), 2)
+        self.assertEqual(len(nodos['Series']['videos']), 1)
         with tempfile.TemporaryDirectory() as d:
             p = Path(d)
             jw.escribir_listas(p, nodos, 'VideoOnDemand', 'https://example.org/')
@@ -60,7 +60,7 @@ class CatalogoTest(unittest.TestCase):
             self.assertIn('Cantidad: 2', raiz)
             programas = (p/'listas/Programas.m3u').read_text()
             self.assertLess(programas.index('Asamblea 2026'), programas.index('Asamblea 2025'))
-            self.assertEqual((p/'listas/Series.m3u').read_text().count('#EXTINF'), 2)
+            self.assertEqual((p/'listas/Series.m3u').read_text().count('#EXTINF'), 1)
             for lista in p.rglob('*.m3u'):
                 for linea in lista.read_text().splitlines():
                     if linea.startswith('#EXTINF'):
@@ -81,6 +81,19 @@ class CatalogoTest(unittest.TestCase):
             self.assertEqual(texto.count('#EXTINF'), 14)
             titulos = [linea.split(',', 1)[1] for linea in texto.splitlines() if linea.startswith('#EXTINF')]
             self.assertEqual(titulos, [n for _, n in jw.CATEGORIAS_PRINCIPALES])
+
+    def test_audiodescripciones_solo_en_su_seccion(self):
+        docs = documentos()
+        # La misma versión AD aparece además en una carpeta común, sin marca en el título.
+        ad_sin_marca = video('ad_sin_marca', 'Título sin advertencia')
+        docs['VODAudioDescriptions']['category']['media'].append(ad_sin_marca)
+        docs['Series']['category']['media'].append(copy.deepcopy(ad_sin_marca))
+        docs['Series']['category']['subcategories'] = [{'key': 'VODAudioDescriptions'}]
+        nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
+        self.assertEqual([v['id'] for v in nodos['Series']['videos']], ['episodio'])
+        self.assertEqual({v['id'] for v in nodos['VODAudioDescriptions']['videos']}, {'ad', 'ad_sin_marca'})
+        self.assertNotIn('VODAudioDescriptions', nodos['Series']['children'])
+        self.assertIn('VODAudioDescriptions', nodos['VideoOnDemand']['children'])
 
     def test_estructura_completa(self):
         parcial = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026')])
