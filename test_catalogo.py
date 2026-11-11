@@ -27,6 +27,7 @@ def respuesta(clave, nombre, media=None, hijos=None):
 def documentos():
     return {
         'VideoOnDemand': respuesta('VideoOnDemand', 'Categorías', hijos=[('Programas', 'Programas'), ('Series', 'Series'), ('VODAudioDescriptions', 'Audiodescripciones')]),
+        'VODAudioDescriptions': respuesta('VODAudioDescriptions', 'Videos con audiodescripciones', [video('ad', 'Video (audiodescripción)')]),
         'Programas': respuesta('Programas', 'Programas', hijos=[('2026Convention', 'Asamblea 2026'), ('2025Convention', 'Asamblea 2025')]),
         '2026Convention': respuesta('2026Convention', 'Asamblea 2026', [video('nuevo')]),
         '2025Convention': respuesta('2025Convention', 'Asamblea 2025', [video('viejo')]),
@@ -46,10 +47,10 @@ class CatalogoTest(unittest.TestCase):
     def test_arbol_y_orden(self):
         with patch.object(jw, 'consultar', side_effect=lambda k, offset=0, **kw: copy.deepcopy(documentos()[k])):
             docs = jw.descargar_arbol('VideoOnDemand', workers=2)
-        self.assertNotIn('VODAudioDescriptions', docs)
+        self.assertIn('VODAudioDescriptions', docs)
         nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
-        self.assertEqual(nodos['VideoOnDemand']['count'], 3)
-        self.assertEqual(len(nodos['Series']['videos']), 1)
+        self.assertEqual(nodos['VideoOnDemand']['count'], 4)
+        self.assertEqual(len(nodos['Series']['videos']), 2)
         with tempfile.TemporaryDirectory() as d:
             p = Path(d)
             jw.escribir_listas(p, nodos, 'VideoOnDemand', 'https://example.org/')
@@ -59,11 +60,27 @@ class CatalogoTest(unittest.TestCase):
             self.assertIn('Cantidad: 2', raiz)
             programas = (p/'listas/Programas.m3u').read_text()
             self.assertLess(programas.index('Asamblea 2026'), programas.index('Asamblea 2025'))
-            self.assertEqual((p/'listas/Series.m3u').read_text().count('#EXTINF'), 1)
+            self.assertEqual((p/'listas/Series.m3u').read_text().count('#EXTINF'), 2)
             for lista in p.rglob('*.m3u'):
                 for linea in lista.read_text().splitlines():
                     if linea.startswith('#EXTINF'):
                         self.assertEqual(linea.count(','), 1)
+
+    def test_catorce_carpetas_en_orden_y_audiodescripciones(self):
+        claves = [k for k, _ in jw.CATEGORIAS_PRINCIPALES]
+        docs = {'VideoOnDemand': respuesta('VideoOnDemand', 'Categorías', hijos=[(k, 'Nombre viejo') for k in reversed(claves)])}
+        for k in claves:
+            docs[k] = respuesta(k, 'Nombre viejo', [video(k, 'Título (audiodescripción)' if k == 'VODAudioDescriptions' else k)])
+        nodos = jw.preparar_catalogo(docs, 'VideoOnDemand')
+        self.assertEqual(nodos['VideoOnDemand']['children'], claves)
+        self.assertEqual(len(nodos['VODAudioDescriptions']['videos']), 1)
+        self.assertEqual([nodos[k]['name'] for k in claves], [n for _, n in jw.CATEGORIAS_PRINCIPALES])
+        with tempfile.TemporaryDirectory() as d:
+            jw.escribir_listas(Path(d), nodos, 'VideoOnDemand', 'https://example.org/')
+            texto = (Path(d)/'inicio.m3u').read_text()
+            self.assertEqual(texto.count('#EXTINF'), 14)
+            titulos = [linea.split(',', 1)[1] for linea in texto.splitlines() if linea.startswith('#EXTINF')]
+            self.assertEqual(titulos, [n for _, n in jw.CATEGORIAS_PRINCIPALES])
 
     def test_estructura_completa(self):
         parcial = respuesta('P', 'Programas', hijos=[('2026Convention', 'Asamblea 2026')])

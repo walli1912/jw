@@ -63,6 +63,25 @@ CALIDADES_PREFERIDAS = (1080, 720)
 PREFIJO_JSON = 'JW_AUTO_'
 
 
+# Orden de lectura de la cuadrícula de JW.ORG: izquierda a derecha, fila por fila.
+CATEGORIAS_PRINCIPALES = (
+    ('VODStudio', 'JW Broadcasting'),
+    ('VODChildren', 'Niños'),
+    ('VODTeenagers', 'Jóvenes'),
+    ('VODFamily', 'Familia'),
+    ('VODProgramsEvents', 'Programas espirituales'),
+    ('VODOurActivities', 'Qué hacemos'),
+    ('VODMinistry', 'Nuestras reuniones y ministerio'),
+    ('VODOurOrganization', 'Nuestra organización'),
+    ('VODBible', 'La Biblia'),
+    ('VODMovies', 'Producciones audiovisuales'),
+    ('VODSeries', 'Series'),
+    ('VODMusicVideos', 'Música'),
+    ('VODIntExp', 'Entrevistas y experiencias'),
+    ('VODAudioDescriptions', 'Videos con audiodescripciones'),
+)
+
+
 def es_audiodescripcion(texto):
     texto = ''.join(c for c in unicodedata.normalize('NFKD', str(texto or ''))
                     if not unicodedata.combining(c)).casefold()
@@ -142,7 +161,7 @@ def descargar_arbol(raiz, workers=4):
 
         def agregar(clave):
             clave_valida(clave)
-            if clave not in solicitadas and not es_audiodescripcion(clave):
+            if clave not in solicitadas:
                 solicitadas.add(clave)
                 pendientes[pool.submit(descargar_categoria, clave)] = clave
 
@@ -158,13 +177,10 @@ def descargar_arbol(raiz, workers=4):
                         otro.cancel()
                     raise RuntimeError(f'No se pudo actualizar {clave}: {error}') from error
                 cat = data['category']
-                if es_audiodescripcion(cat.get('name')):
-                    continue
                 documentos[clave] = data
                 print(f'[{len(documentos)}/{len(solicitadas)}] {cat.get("name", clave)}', flush=True)
                 for sub in cat.get('subcategories') or []:
-                    if not es_audiodescripcion(sub.get('name')):
-                        agregar(sub['key'])
+                    agregar(sub['key'])
     if raiz not in documentos:
         raise ValueError('No se obtuvo el catálogo principal')
     return documentos
@@ -198,8 +214,6 @@ def preparar_catalogo(documentos, raiz):
         seleccion = []
         vistos, urls = set(), set()
         for v in cat.get('media') or []:
-            if es_audiodescripcion(v.get('title')):
-                continue
             medio = elegir_medio(v)
             if medio is None:
                 continue
@@ -216,6 +230,16 @@ def preparar_catalogo(documentos, raiz):
                               'quality': str(medio.get('label') or ''), 'logo': elegir_imagen(v)})
         hijos = [s['key'] for s in cat.get('subcategories') or [] if s['key'] in documentos]
         nodos[clave] = {'name': str(cat.get('name') or clave), 'children': hijos, 'videos': seleccion}
+    if raiz == CATEGORIA_PRINCIPAL:
+        nombres = dict(CATEGORIAS_PRINCIPALES)
+        presentes = set(nodos[raiz]['children'])
+        ordenados = [k for k, _ in CATEGORIAS_PRINCIPALES if k in presentes]
+        # No se pierden categorías futuras: se agregan al final hasta definir su orden.
+        ordenados.extend(k for k in nodos[raiz]['children'] if k not in nombres)
+        nodos[raiz]['children'] = ordenados
+        for clave in ordenados:
+            if clave in nombres:
+                nodos[clave]['name'] = nombres[clave]
     contenidos = {}
 
     def contar(clave, ruta=frozenset()):
