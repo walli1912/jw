@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-12T20:10:48.902974+00:00",
+  "success": true,
+  "initial": false,
+  "added": [],
+  "removed": [],
+  "changed": [
+    "docid-1112024061_S_120_VIDEO",
+    "docid-1112024061_S_1_VIDEO"
+  ],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [],
+  "total_videos": 4086,
+  "total_categories": 174
+}
