@@ -1,5 +1,5 @@
 #EXTM3U size="medium"
-#EXTINF:0 type="playlist" description="Cantidad: 259",JW Broadcasting
+#EXTINF:0 type="playlist" description="Cantidad: 260",JW Broadcasting
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODStudio.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 151",Niños
@@ -29,7 +29,7 @@ https://walli1912.github.io/jw/listas/VODBible.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 63",Producciones audiovisuales
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODMovies.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 727",Series
+#EXTINF:0 type="playlist" description="Cantidad: 728",Series
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODSeries.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 433",Música
@@ -38,6 +38,6 @@ https://walli1912.github.io/jw/listas/VODMusicVideos.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 359",Entrevistas y experiencias
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODIntExp.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 829",Videos con audiodescripciones
+#EXTINF:0 type="playlist" description="Cantidad: 830",Videos con audiodescripciones
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODAudioDescriptions.m3u

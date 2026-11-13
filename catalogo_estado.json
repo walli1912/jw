@@ -708,9 +708,9 @@
         "JW Broadcasting / Programas mensuales"
       ]
     },
-    "docid-1112024060_S_1_VIDEO": {
-      "title": "2026 | Informe 6 del Cuerpo Gobernante",
-      "url": "https://cfp2.jw-cdn.org/a/2c7ed8/4/o/1112024060_S_cnt_1_r720P.mp4",
+    "docid-1112024071_S_1_VIDEO": {
+      "title": "2026 | Informe 7 del Cuerpo Gobernante",
+      "url": "https://cfp2.jw-cdn.org/a/30ab409/3/o/1112024071_S_cnt_1_r720P.mp4",
       "quality": "720p",
       "categories": [
         "JW Broadcasting / Destacados",
@@ -2167,6 +2167,14 @@
       "categories": [
         "JW Broadcasting / Discursos",
         "Jóvenes / Progreso espiritual"
+      ]
+    },
+    "docid-1112024060_S_1_VIDEO": {
+      "title": "2026 | Informe 6 del Cuerpo Gobernante",
+      "url": "https://cfp2.jw-cdn.org/a/2c7ed8/4/o/1112024060_S_cnt_1_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "JW Broadcasting / Noticias y anuncios"
       ]
     },
     "docid-1112024059_S_1_VIDEO": {
@@ -24166,6 +24174,14 @@
         "Series / Seamos valientes al andar con Dios (videos)"
       ]
     },
+    "pub-patv_S_3_VIDEO": {
+      "title": "Conoce las nuevas funciones de JW Library",
+      "url": "https://cfp2.jw-cdn.org/a/7e6d8a3/1/o/patv_S_03_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Series / Ayuda del sitio web y la aplicación"
+      ]
+    },
     "pub-patv_S_1_VIDEO": {
       "title": "Cómo usar los recuadros en las ediciones digitales",
       "url": "https://cfp2.jw-cdn.org/a/05389b9/2/o/patv_S_01_r720P.mp4",
@@ -28152,6 +28168,14 @@
       "categories": [
         "Videos con audiodescripciones / Asamblea regional 2026 | Felices para siempre",
         "Videos con audiodescripciones / Las buenas noticias según Jesús"
+      ]
+    },
+    "docid-1112024071_S_123_VIDEO": {
+      "title": "2026 | Informe 7 del Cuerpo Gobernante (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/ee6954e/3/o/1112024071_S_cnt_123_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / JW Broadcasting"
       ]
     },
     "pub-jwb-143_S_102_VIDEO": {
@@ -34685,6 +34709,14 @@
     ],
     "LatestVideos": [
       {
+        "id": "docid-1112024071_S_1_VIDEO",
+        "title": "2026 | Informe 7 del Cuerpo Gobernante"
+      },
+      {
+        "id": "pub-patv_S_3_VIDEO",
+        "title": "Conoce las nuevas funciones de JW Library"
+      },
+      {
         "id": "pub-ebtv_S_14_VIDEO",
         "title": "Nuestro planeta tiene futuro"
       },
@@ -34715,14 +34747,6 @@
       {
         "id": "pub-mwbv_S_202611_1_VIDEO",
         "title": "Nuestras donaciones le dan gloria a Jehová"
-      },
-      {
-        "id": "pub-jwbvod26_S_43_VIDEO",
-        "title": "Disfruta del ministerio: Luchar contra nuestras inseguridades"
-      },
-      {
-        "id": "pub-jwbvod26_S_44_VIDEO",
-        "title": "Disfruta del ministerio: Esforzarse por hacer más"
       }
     ]
   }

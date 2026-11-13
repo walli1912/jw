@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-13T19:55:04.202861+00:00",
+  "success": true,
+  "initial": false,
+  "added": [
+    "docid-1112024071_S_123_VIDEO",
+    "docid-1112024071_S_1_VIDEO",
+    "pub-patv_S_3_VIDEO"
+  ],
+  "removed": [],
+  "changed": [
+    "docid-1112024060_S_1_VIDEO"
+  ],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [
+    "LatestVideos"
+  ],
+  "total_videos": 4089,
+  "total_categories": 174
+}

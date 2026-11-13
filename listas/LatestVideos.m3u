@@ -1,4 +1,8 @@
 #EXTM3U size="medium"
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/1112024071/univ/art/1112024071_univ_wss_sm.jpg",2026 | Informe 7 del Cuerpo Gobernante
+https://cfp2.jw-cdn.org/a/30ab409/3/o/1112024071_S_cnt_1_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_03_sm.jpg",Conoce las nuevas funciones de JW Library
+https://cfp2.jw-cdn.org/a/7e6d8a3/1/o/patv_S_03_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/1102020449/univ/art/1102020449_univ_wss_sm.jpg",Nuestro planeta tiene futuro
 https://cfp2.jw-cdn.org/a/d668cc/1/o/ebtv_S_14_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwb-143/univ/art/jwb-143_univ_wss_01_sm.jpg",JW Broadcasting: Noviembre de 2026
@@ -15,7 +19,3 @@ https://cfp2.jw-cdn.org/a/ae0b0f/1/o/jwbvod26_S_47_r720P.mp4
 https://cfp2.jw-cdn.org/a/3bb7e0/1/o/ljf_S_011_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/mwbv/202611/univ/art/mwbv_univ_202611_wss_01_sm.jpg",Nuestras donaciones le dan gloria a Jehová
 https://cfp2.jw-cdn.org/a/dc97b14/2/o/mwbv_S_202611_01_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwbvod26/univ/art/jwbvod26_univ_wss_43_sm.jpg",Disfruta del ministerio: Luchar contra nuestras inseguridades
-https://cfp2.jw-cdn.org/a/cea0be/1/o/jwbvod26_S_43_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwbvod26/univ/art/jwbvod26_univ_wss_44_sm.jpg",Disfruta del ministerio: Esforzarse por hacer más
-https://cfp2.jw-cdn.org/a/45ea220/1/o/jwbvod26_S_44_r720P.mp4

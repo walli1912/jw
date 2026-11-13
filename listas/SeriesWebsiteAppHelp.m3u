@@ -1,4 +1,6 @@
 #EXTM3U size="medium"
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_03_sm.jpg",Conoce las nuevas funciones de JW Library
+https://cfp2.jw-cdn.org/a/7e6d8a3/1/o/patv_S_03_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_01_sm.jpg",Cómo usar los recuadros en las ediciones digitales
 https://cfp2.jw-cdn.org/a/05389b9/2/o/patv_S_01_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_02_sm.jpg",Tutorial para aprovechar al máximo la “Guía de estudio”
