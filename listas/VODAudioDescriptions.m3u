@@ -29,7 +29,7 @@ https://walli1912.github.io/jw/listas/VODDramasAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 66",Disfrute de la vida (videos)
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODLFFVideosAD.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 5",Enseñanzas importantes de la Biblia
+#EXTINF:0 type="playlist" description="Cantidad: 6",Enseñanzas importantes de la Biblia
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODSeriesBibleTeachingsAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 3",Familia
@@ -104,7 +104,7 @@ https://walli1912.github.io/jw/listas/VODBibleAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 5",La Biblia les cambió la vida
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/SeriesBibleChangesLivesAD.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 8",Ayudas para la predicación
+#EXTINF:0 type="playlist" description="Cantidad: 9",Ayudas para la predicación
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODMinistryToolsAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 13",La verdad cambia la vida de las personas
