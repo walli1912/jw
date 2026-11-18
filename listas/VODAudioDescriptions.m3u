@@ -29,7 +29,7 @@ https://walli1912.github.io/jw/listas/VODDramasAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 66",Disfrute de la vida (videos)
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODLFFVideosAD.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 6",Enseñanzas importantes de la Biblia
+#EXTINF:0 type="playlist" description="Cantidad: 7",Enseñanzas importantes de la Biblia
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/VODSeriesBibleTeachingsAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 3",Familia
@@ -113,6 +113,9 @@ https://walli1912.github.io/jw/listas/VODIntExpTransformationsAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 13",Seamos valientes al andar con Dios (videos)
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/SeriesWCGVideosAD.m3u
+#EXTINF:0 type="playlist" description="Cantidad: 1",Ayuda del sitio web y la aplicación
+#EXTSIZE: Medium
+https://walli1912.github.io/jw/listas/SeriesWebsiteAppHelpAD.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 2",Lo que opinan otros jóvenes
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/SeriesWhatPeersSayAD.m3u

@@ -653,6 +653,10 @@
       "name": "Seamos valientes al andar con Dios (videos)",
       "path": "Videos con audiodescripciones / Seamos valientes al andar con Dios (videos)"
     },
+    "SeriesWebsiteAppHelpAD": {
+      "name": "Ayuda del sitio web y la aplicación",
+      "path": "Videos con audiodescripciones / Ayuda del sitio web y la aplicación"
+    },
     "SeriesWhatPeersSayAD": {
       "name": "Lo que opinan otros jóvenes",
       "path": "Videos con audiodescripciones / Lo que opinan otros jóvenes"
@@ -16826,7 +16830,7 @@
     },
     "docid-502018853_S_1_VIDEO": {
       "title": "¿Aprueba Dios todas las religiones?",
-      "url": "https://cfp2.jw-cdn.org/a/482487/2/o/502018853_S_cnt_1_r720P.mp4",
+      "url": "https://cfp2.jw-cdn.org/a/482487/3/o/502018853_S_cnt_1_r720P.mp4",
       "quality": "720p",
       "categories": [
         "La Biblia / Enseñanzas bíblicas",
@@ -22540,7 +22544,7 @@
     },
     "pub-lffv_S_131_VIDEO": {
       "title": "¿Aprueba Dios todas las religiones? (fragmento)",
-      "url": "https://cfp2.jw-cdn.org/a/505988/2/o/lffv_S_131_r720P.mp4",
+      "url": "https://cfp2.jw-cdn.org/a/505988/3/o/lffv_S_131_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Series / Disfrute de la vida (videos)"
@@ -29537,7 +29541,7 @@
     },
     "pub-lffv_S_136_VIDEO": {
       "title": "¿Aprueba Dios todas las religiones? (fragmento) (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/83b882c/1/o/lffv_S_136_r720P.mp4",
+      "url": "https://cfp2.jw-cdn.org/a/83b882c/2/o/lffv_S_136_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Disfrute de la vida (videos)"
@@ -29855,6 +29859,14 @@
     "docid-502018850_S_108_VIDEO": {
       "title": "¿Por qué permite Dios el sufrimiento? (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/5b5f78a/1/o/502018850_S_cnt_108_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Enseñanzas importantes de la Biblia"
+      ]
+    },
+    "docid-502018853_S_109_VIDEO": {
+      "title": "¿Aprueba Dios todas las religiones? (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/abb6ca/1/o/502018853_S_cnt_109_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Enseñanzas importantes de la Biblia"
@@ -33187,6 +33199,14 @@
         "Videos con audiodescripciones / Seamos valientes al andar con Dios (videos)"
       ]
     },
+    "pub-patv_S_103_VIDEO": {
+      "title": "Conoce las nuevas funciones de JW Library (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/38948c1/1/o/patv_S_103_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Ayuda del sitio web y la aplicación"
+      ]
+    },
     "docid-502015255_S_102_VIDEO": {
       "title": "Lo que opinan otros jóvenes: Creer en Dios (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/b4a2c91/1/o/502015255_S_cnt_102_r720P.mp4",
@@ -34755,14 +34775,6 @@
       {
         "id": "pub-jwbvod26_S_47_VIDEO",
         "title": "Peter Price: Seamos leales a Jehová cuando un ser querido nos pone a prueba (Job 2:9, 10)"
-      },
-      {
-        "id": "pub-ljf_S_11_VIDEO",
-        "title": "Aprende de los amigos de Jehová: Eliseo"
-      },
-      {
-        "id": "pub-mwbv_S_202611_1_VIDEO",
-        "title": "Nuestras donaciones le dan gloria a Jehová"
       }
     ]
   }

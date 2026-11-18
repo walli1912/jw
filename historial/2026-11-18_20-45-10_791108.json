@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-18T20:45:10.791108+00:00",
+  "success": true,
+  "initial": false,
+  "added": [
+    "docid-502018853_S_109_VIDEO",
+    "pub-patv_S_103_VIDEO"
+  ],
+  "removed": [],
+  "changed": [
+    "docid-502018853_S_1_VIDEO",
+    "pub-lffv_S_131_VIDEO",
+    "pub-lffv_S_136_VIDEO"
+  ],
+  "new_categories": [
+    "SeriesWebsiteAppHelpAD"
+  ],
+  "removed_categories": [],
+  "changed_showcases": [
+    "LatestVideos"
+  ],
+  "total_videos": 4093,
+  "total_categories": 175
+}
