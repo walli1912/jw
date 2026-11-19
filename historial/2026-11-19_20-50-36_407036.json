@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-19T20:50:36.407036+00:00",
+  "success": true,
+  "initial": false,
+  "added": [
+    "pub-jwb_S_202005_103_VIDEO",
+    "pub-patv_S_101_VIDEO",
+    "pub-sjjm_S_664_VIDEO"
+  ],
+  "removed": [],
+  "changed": [],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [],
+  "total_videos": 4096,
+  "total_categories": 175
+}

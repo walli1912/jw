@@ -1,3 +1,5 @@
 #EXTM3U size="medium"
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_103_sm.jpg",Conoce las nuevas funciones de JW Library (con audiodescripciones)
 https://cfp2.jw-cdn.org/a/38948c1/1/o/patv_S_103_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/patv/univ/art/patv_univ_wss_101_sm.jpg",Cómo usar los recuadros en las ediciones digitales (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/0f5d404/1/o/patv_S_101_r720P.mp4
