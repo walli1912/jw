@@ -5563,6 +5563,22 @@
         "Programas espirituales / Asamblea regional 2014 | Sigamos buscando primero el Reino de Dios"
       ]
     },
+    "pub-jwbvod26_S_50_VIDEO": {
+      "title": "Michael Banks: Entender las profecías fortalece nuestra fe (Dan. 2:31-33)",
+      "url": "https://cfp2.jw-cdn.org/a/9d43eeb/1/o/jwbvod26_S_50_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Programas espirituales / Adoración matutina"
+      ]
+    },
+    "pub-jwbvod26_S_48_VIDEO": {
+      "title": "Gage Fleegle: Busquemos con empeño la justicia de Jehová (Prov. 15:9)",
+      "url": "https://cfp2.jw-cdn.org/a/bcb283/1/o/jwbvod26_S_48_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Programas espirituales / Adoración matutina"
+      ]
+    },
     "pub-jwb-143_S_5_VIDEO": {
       "title": "John Ekrann: “Todos tropezamos muchas veces” (Sant. 3:2)",
       "url": "https://cfp2.jw-cdn.org/a/70079f/2/o/jwb-143_S_05_r720P.mp4",
@@ -34768,6 +34784,14 @@
       }
     ],
     "LatestVideos": [
+      {
+        "id": "pub-jwbvod26_S_48_VIDEO",
+        "title": "Gage Fleegle: Busquemos con empeño la justicia de Jehová (Prov. 15:9)"
+      },
+      {
+        "id": "pub-jwbvod26_S_50_VIDEO",
+        "title": "Michael Banks: Entender las profecías fortalece nuestra fe (Dan. 2:31-33)"
+      },
       {
         "id": "docid-1112024071_S_1_VIDEO",
         "title": "2026 | Informe 7 del Cuerpo Gobernante"

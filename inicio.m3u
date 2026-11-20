@@ -2,7 +2,7 @@
 #EXTINF:0 type="playlist" description="Cantidad: 1",RECOMENDADOS
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/FeaturedLibraryVideos.m3u
-#EXTINF:0 type="playlist" description="Cantidad: 8",ÚLTIMOS VIDEOS
+#EXTINF:0 type="playlist" description="Cantidad: 10",ÚLTIMOS VIDEOS
 #EXTSIZE: Medium
 https://walli1912.github.io/jw/listas/LatestVideos.m3u
 #EXTINF:0 type="playlist" description="Cantidad: 14 carpetas",BIBLIOTECA JW
