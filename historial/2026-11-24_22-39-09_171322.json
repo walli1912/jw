@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-24T22:39:09.171322+00:00",
+  "success": true,
+  "initial": false,
+  "added": [
+    "pub-jwbrd_S_201502_102_VIDEO"
+  ],
+  "removed": [],
+  "changed": [
+    "docid-502018850_S_108_VIDEO",
+    "docid-502018850_S_1_VIDEO"
+  ],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [],
+  "total_videos": 4099,
+  "total_categories": 175
+}
