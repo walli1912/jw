@@ -1,20 +1,4 @@
 #EXTM3U size="medium"
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_528_sm.jpg",28. Cómo hacernos amigos de Jehová (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/7fb91b7/1/o/sjjm_S_528_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/nwtsv/univ/art/nwtsv_univ_wss_255_sm.jpg",Información sobre Lamentaciones (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/7e2629/1/o/nwtsv_S_255_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_590_sm.jpg",90. Animémonos unos a otros (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/95f936/1/o/sjjm_S_590_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwbai/201511/univ/art/jwbai_univ_201511_wss_101_sm.jpg",Animemos a los inactivos (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/58aaa5/1/o/jwbai_S_201511_101_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/wcgv/univ/art/wcgv_univ_wss_101_sm.jpg",No seamos como los cobardes; sino como los valientes. No seamos como los habitantes de Meroz; sino como Jael (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/c6921f/1/o/wcgv_S_101_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_575_sm.jpg",75. “¡Aquí estoy; envíame!” (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/431c7b0/1/o/sjjm_S_575_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_584_sm.jpg",84. Servimos donde se nos necesite (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/1cab75/1/o/sjjm_S_584_r720P.mp4
-#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_557_sm.jpg",57. Predicamos a toda clase de personas (con audiodescripciones)
-https://cfp2.jw-cdn.org/a/09a4b05/2/o/sjjm_S_557_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_658_sm.jpg",158. Danos paciencia (con audiodescripciones)
 https://cfp2.jw-cdn.org/a/603fa5b/2/o/sjjm_S_658_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_609_sm.jpg",109. Amémonos de todo corazón (con audiodescripciones)
@@ -27,3 +11,17 @@ https://cfp2.jw-cdn.org/a/425540/1/o/sjjm_S_574_r720P.mp4
 https://cfp2.jw-cdn.org/a/297f484b/1/o/sjjm_S_607_r720P.mp4
 #EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_516_sm.jpg",16. Alabemos a Jehová por su Hijo; el Ungido (con audiodescripciones)
 https://cfp2.jw-cdn.org/a/b077bc9/1/o/sjjm_S_516_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_565_sm.jpg",65. Lucha por progresar (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/85c150/1/o/sjjm_S_565_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/nwtsv/univ/art/nwtsv_univ_wss_265_sm.jpg",Información sobre Ezequiel (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/d2a279/1/o/nwtsv_S_265_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_563_sm.jpg",63. ¡Soy testigo de Jehová! (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/d047c93/1/o/sjjm_S_563_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/jwbai/201509/univ/art/jwbai_univ_201509_wss_101_sm.jpg",Aprovecha al máximo tu soltería (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/58fb808/1/o/jwbai_S_201509_101_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_634_sm.jpg",134. Los hijos son un regalo de Dios (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/cdb54a/1/o/sjjm_S_634_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_522_sm.jpg",22. ¡Que venga el Reino que Dios ha establecido! (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/22d109/2/o/sjjm_S_522_r720P.mp4
+#EXTINF:0 type="video" tvg-logo="https://cms-imgp.jw-cdn.org/img/p/sjjm/univ/art/sjjm_univ_wss_624_sm.jpg",124. Siempre fieles y leales (con audiodescripciones)
+https://cfp2.jw-cdn.org/a/12fc65a/1/o/sjjm_S_624_r720P.mp4

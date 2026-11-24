@@ -718,7 +718,8 @@
       "quality": "720p",
       "categories": [
         "JW Broadcasting / Destacados",
-        "JW Broadcasting / Noticias y anuncios"
+        "JW Broadcasting / Noticias y anuncios",
+        "Nuestras reuniones y ministerio / Reuniones semanales"
       ]
     },
     "pub-jwb-142_S_1_VIDEO": {
@@ -16461,25 +16462,6 @@
         "Qué hacemos / Eventos especiales"
       ]
     },
-    "pub-nwtsv_S_250_VIDEO": {
-      "title": "Información sobre Lamentaciones",
-      "url": "https://cfp2.jw-cdn.org/a/02e04c6/2/o/nwtsv_S_250_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "La Biblia / Libros de la Biblia",
-        "Nuestras reuniones y ministerio / Reuniones semanales",
-        "Series / Información sobre los libros de la Biblia"
-      ]
-    },
-    "pub-jwbai_S_201511_1_VIDEO": {
-      "title": "Animemos a los inactivos",
-      "url": "https://cfp2.jw-cdn.org/a/47f018/1/o/jwbai_S_201511_01_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "La Biblia / Siga los consejos de la Biblia",
-        "Nuestras reuniones y ministerio / Reuniones semanales"
-      ]
-    },
     "pub-jwb-130_S_5_VIDEO": {
       "title": "Consuelo para los cuidadores",
       "url": "https://cfp2.jw-cdn.org/a/cabc8ae/2/o/jwb-130_S_05_r720P.mp4",
@@ -16487,6 +16469,16 @@
       "categories": [
         "Entrevistas y experiencias / Se enfrentan a pruebas",
         "Nuestras reuniones y ministerio / Reuniones semanales"
+      ]
+    },
+    "pub-nwtsv_S_260_VIDEO": {
+      "title": "Información sobre Ezequiel",
+      "url": "https://cfp2.jw-cdn.org/a/7ce052/2/o/nwtsv_S_260_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "La Biblia / Libros de la Biblia",
+        "Nuestras reuniones y ministerio / Reuniones semanales",
+        "Series / Información sobre los libros de la Biblia"
       ]
     },
     "pub-imv_S_5_VIDEO": {
@@ -20443,9 +20435,9 @@
         "Series / Información sobre los libros de la Biblia"
       ]
     },
-    "pub-nwtsv_S_260_VIDEO": {
-      "title": "Información sobre Ezequiel",
-      "url": "https://cfp2.jw-cdn.org/a/7ce052/2/o/nwtsv_S_260_r720P.mp4",
+    "pub-nwtsv_S_250_VIDEO": {
+      "title": "Información sobre Lamentaciones",
+      "url": "https://cfp2.jw-cdn.org/a/02e04c6/2/o/nwtsv_S_250_r720P.mp4",
       "quality": "720p",
       "categories": [
         "La Biblia / Libros de la Biblia",
@@ -21773,6 +21765,14 @@
     "pub-jwbai_S_201512_1_VIDEO": {
       "title": "Hermanos, esfuércense por progresar en sentido espiritual",
       "url": "https://cfp2.jw-cdn.org/a/d71a255/1/o/jwbai_S_201512_01_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "La Biblia / Siga los consejos de la Biblia"
+      ]
+    },
+    "pub-jwbai_S_201511_1_VIDEO": {
+      "title": "Animemos a los inactivos",
+      "url": "https://cfp2.jw-cdn.org/a/47f018/1/o/jwbai_S_201511_01_r720P.mp4",
       "quality": "720p",
       "categories": [
         "La Biblia / Siga los consejos de la Biblia"
@@ -28007,78 +28007,6 @@
         "Entrevistas y experiencias / De nuestros archivos"
       ]
     },
-    "pub-sjjm_S_528_VIDEO": {
-      "title": "28. Cómo hacernos amigos de Jehová (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/7fb91b7/1/o/sjjm_S_528_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
-    "pub-nwtsv_S_255_VIDEO": {
-      "title": "Información sobre Lamentaciones (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/7e2629/1/o/nwtsv_S_255_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Información sobre los libros de la Biblia",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
-    "pub-sjjm_S_590_VIDEO": {
-      "title": "90. Animémonos unos a otros (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/95f936/1/o/sjjm_S_590_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
-    "pub-jwbai_S_201511_101_VIDEO": {
-      "title": "Animemos a los inactivos (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/58aaa5/1/o/jwbai_S_201511_101_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Reuniones semanales",
-        "Videos con audiodescripciones / Siga los consejos de la Biblia"
-      ]
-    },
-    "pub-wcgv_S_101_VIDEO": {
-      "title": "No seamos como los cobardes, sino como los valientes. No seamos como los habitantes de Meroz, sino como Jael (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/c6921f/1/o/wcgv_S_101_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Reuniones semanales",
-        "Videos con audiodescripciones / Seamos valientes al andar con Dios (videos)"
-      ]
-    },
-    "pub-sjjm_S_575_VIDEO": {
-      "title": "75. “¡Aquí estoy, envíame!” (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/431c7b0/1/o/sjjm_S_575_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
-    "pub-sjjm_S_584_VIDEO": {
-      "title": "84. Servimos donde se nos necesite (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/1cab75/1/o/sjjm_S_584_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
-    "pub-sjjm_S_557_VIDEO": {
-      "title": "57. Predicamos a toda clase de personas (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/09a4b05/2/o/sjjm_S_557_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
-        "Videos con audiodescripciones / Reuniones semanales"
-      ]
-    },
     "pub-sjjm_S_658_VIDEO": {
       "title": "158. Danos paciencia (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/603fa5b/2/o/sjjm_S_658_r720P.mp4",
@@ -28127,6 +28055,69 @@
     "pub-sjjm_S_516_VIDEO": {
       "title": "16. Alabemos a Jehová por su Hijo, el Ungido (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/b077bc9/1/o/sjjm_S_516_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-sjjm_S_565_VIDEO": {
+      "title": "65. Lucha por progresar (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/85c150/1/o/sjjm_S_565_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-nwtsv_S_265_VIDEO": {
+      "title": "Información sobre Ezequiel (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/d2a279/1/o/nwtsv_S_265_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Información sobre los libros de la Biblia",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-sjjm_S_563_VIDEO": {
+      "title": "63. ¡Soy testigo de Jehová! (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/d047c93/1/o/sjjm_S_563_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-jwbai_S_201509_101_VIDEO": {
+      "title": "Aprovecha al máximo tu soltería (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/58fb808/1/o/jwbai_S_201509_101_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Reuniones semanales",
+        "Videos con audiodescripciones / Siga los consejos de la Biblia"
+      ]
+    },
+    "pub-sjjm_S_634_VIDEO": {
+      "title": "134. Los hijos son un regalo de Dios (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/cdb54a/1/o/sjjm_S_634_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-sjjm_S_522_VIDEO": {
+      "title": "22. ¡Que venga el Reino que Dios ha establecido! (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/22d109/2/o/sjjm_S_522_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
+    "pub-sjjm_S_624_VIDEO": {
+      "title": "124. Siempre fieles y leales (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/12fc65a/1/o/sjjm_S_624_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)",
@@ -28704,6 +28695,14 @@
         "Videos con audiodescripciones / Un día en la vida de..."
       ]
     },
+    "pub-jwbai_S_201511_101_VIDEO": {
+      "title": "Animemos a los inactivos (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/58aaa5/1/o/jwbai_S_201511_101_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Siga los consejos de la Biblia"
+      ]
+    },
     "pub-jwb_S_201904_103_VIDEO": {
       "title": "Dios ama a las personas limpias (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/d69a59/1/o/jwb_S_201904_103_r720P.mp4",
@@ -28933,14 +28932,6 @@
     "pub-jwbcov_S_201505_108_VIDEO": {
       "title": "Sigamos a Cristo, pero no \"de lejos\" (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/498c64/1/o/jwbcov_S_201505_108_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Siga los consejos de la Biblia"
-      ]
-    },
-    "pub-jwbai_S_201509_101_VIDEO": {
-      "title": "Aprovecha al máximo tu soltería (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/58fb808/1/o/jwbai_S_201509_101_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Siga los consejos de la Biblia"
@@ -30324,6 +30315,14 @@
         "Videos con audiodescripciones / Información sobre los libros de la Biblia"
       ]
     },
+    "pub-nwtsv_S_255_VIDEO": {
+      "title": "Información sobre Lamentaciones (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/7e2629/1/o/nwtsv_S_255_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Información sobre los libros de la Biblia"
+      ]
+    },
     "pub-nwtsv_S_235_VIDEO": {
       "title": "Información sobre Isaías (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/07d2bf/1/o/nwtsv_S_235_r720P.mp4",
@@ -30335,14 +30334,6 @@
     "pub-nwtsv_S_245_VIDEO": {
       "title": "Información sobre Jeremías (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/0dd2b1/1/o/nwtsv_S_245_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Información sobre los libros de la Biblia"
-      ]
-    },
-    "pub-nwtsv_S_265_VIDEO": {
-      "title": "Información sobre Ezequiel (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/d2a279/1/o/nwtsv_S_265_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Información sobre los libros de la Biblia"
@@ -31856,14 +31847,6 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
-    "pub-sjjm_S_522_VIDEO": {
-      "title": "22. ¡Que venga el Reino que Dios ha establecido! (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/22d109/2/o/sjjm_S_522_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
-      ]
-    },
     "pub-sjjm_S_523_VIDEO": {
       "title": "23. Jehová ha empezado su gobierno (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/f94059/1/o/sjjm_S_523_r720P.mp4",
@@ -31899,6 +31882,14 @@
     "pub-sjjm_S_527_VIDEO": {
       "title": "27. La revelación de los hijos de Dios (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/6da4d9/1/o/sjjm_S_527_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
+      ]
+    },
+    "pub-sjjm_S_528_VIDEO": {
+      "title": "28. Cómo hacernos amigos de Jehová (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/7fb91b7/1/o/sjjm_S_528_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
@@ -32128,6 +32119,14 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
+    "pub-sjjm_S_557_VIDEO": {
+      "title": "57. Predicamos a toda clase de personas (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/09a4b05/2/o/sjjm_S_557_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
+      ]
+    },
     "pub-sjjm_S_558_VIDEO": {
       "title": "58. Voy a buscar a los amigos de la paz (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/64f8e66/1/o/sjjm_S_558_r720P.mp4",
@@ -32168,25 +32167,9 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
-    "pub-sjjm_S_563_VIDEO": {
-      "title": "63. ¡Soy testigo de Jehová! (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/d047c93/1/o/sjjm_S_563_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
-      ]
-    },
     "pub-sjjm_S_564_VIDEO": {
       "title": "64. Participemos con gozo en la cosecha (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/2f8f98/1/o/sjjm_S_564_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
-      ]
-    },
-    "pub-sjjm_S_565_VIDEO": {
-      "title": "65. Lucha por progresar (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/85c150/1/o/sjjm_S_565_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
@@ -32256,6 +32239,14 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
+    "pub-sjjm_S_575_VIDEO": {
+      "title": "75. “¡Aquí estoy, envíame!” (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/431c7b0/1/o/sjjm_S_575_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
+      ]
+    },
     "pub-sjjm_S_576_VIDEO": {
       "title": "76. Cuéntame lo que sientes (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/82e685a/1/o/sjjm_S_576_r720P.mp4",
@@ -32320,6 +32311,14 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
+    "pub-sjjm_S_584_VIDEO": {
+      "title": "84. Servimos donde se nos necesite (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/1cab75/1/o/sjjm_S_584_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
+      ]
+    },
     "pub-sjjm_S_585_VIDEO": {
       "title": "85. “Recíbanse con gusto unos a otros” (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/50d049/1/o/sjjm_S_585_r720P.mp4",
@@ -32355,6 +32354,14 @@
     "pub-sjjm_S_589_VIDEO": {
       "title": "89. Jehová bendice al que escucha y obedece (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/24c1a3c/1/o/sjjm_S_589_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
+      ]
+    },
+    "pub-sjjm_S_590_VIDEO": {
+      "title": "90. Animémonos unos a otros (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/95f936/1/o/sjjm_S_590_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
@@ -32608,14 +32615,6 @@
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
       ]
     },
-    "pub-sjjm_S_624_VIDEO": {
-      "title": "124. Siempre fieles y leales (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/12fc65a/1/o/sjjm_S_624_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
-      ]
-    },
     "pub-sjjm_S_625_VIDEO": {
       "title": "125. Felices los misericordiosos (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/bf2e3c/1/o/sjjm_S_625_r720P.mp4",
@@ -32683,14 +32682,6 @@
     "pub-sjjm_S_633_VIDEO": {
       "title": "133. Sirvamos a Jehová en nuestra juventud (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/024ad0/1/o/sjjm_S_633_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
-      ]
-    },
-    "pub-sjjm_S_634_VIDEO": {
-      "title": "134. Los hijos son un regalo de Dios (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/cdb54a/1/o/sjjm_S_634_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Cantemos con gozo (para las reuniones)"
@@ -33210,6 +33201,14 @@
       "quality": "720p",
       "categories": [
         "Videos con audiodescripciones / Asamblea regional 2021 | \"Poderosos gracias a la fe\"",
+        "Videos con audiodescripciones / Seamos valientes al andar con Dios (videos)"
+      ]
+    },
+    "pub-wcgv_S_101_VIDEO": {
+      "title": "No seamos como los cobardes, sino como los valientes. No seamos como los habitantes de Meroz, sino como Jael (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/c6921f/1/o/wcgv_S_101_r720P.mp4",
+      "quality": "720p",
+      "categories": [
         "Videos con audiodescripciones / Seamos valientes al andar con Dios (videos)"
       ]
     },
@@ -34779,8 +34778,8 @@
   "showcases": {
     "FeaturedLibraryVideos": [
       {
-        "id": "docid-502019103_S_1_VIDEO",
-        "title": "La Palabra de Dios hace que estén radiantes de felicidad"
+        "id": "docid-502017181_S_1_VIDEO",
+        "title": "Leer la Biblia"
       }
     ],
     "LatestVideos": [

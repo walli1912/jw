@@ -1,0 +1,35 @@
+{
+  "utc": "2026-11-24T00:07:15.547445+00:00",
+  "success": true,
+  "initial": false,
+  "added": [],
+  "removed": [],
+  "changed": [
+    "docid-1112024071_S_1_VIDEO",
+    "pub-jwbai_S_201509_101_VIDEO",
+    "pub-jwbai_S_201511_101_VIDEO",
+    "pub-jwbai_S_201511_1_VIDEO",
+    "pub-nwtsv_S_250_VIDEO",
+    "pub-nwtsv_S_255_VIDEO",
+    "pub-nwtsv_S_260_VIDEO",
+    "pub-nwtsv_S_265_VIDEO",
+    "pub-sjjm_S_522_VIDEO",
+    "pub-sjjm_S_528_VIDEO",
+    "pub-sjjm_S_557_VIDEO",
+    "pub-sjjm_S_563_VIDEO",
+    "pub-sjjm_S_565_VIDEO",
+    "pub-sjjm_S_575_VIDEO",
+    "pub-sjjm_S_584_VIDEO",
+    "pub-sjjm_S_590_VIDEO",
+    "pub-sjjm_S_624_VIDEO",
+    "pub-sjjm_S_634_VIDEO",
+    "pub-wcgv_S_101_VIDEO"
+  ],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [
+    "FeaturedLibraryVideos"
+  ],
+  "total_videos": 4098,
+  "total_categories": 175
+}
