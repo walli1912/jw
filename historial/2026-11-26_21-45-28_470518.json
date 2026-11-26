@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-26T21:45:28.470518+00:00",
+  "success": true,
+  "initial": false,
+  "added": [
+    "pub-ivwf_S_1_VIDEO"
+  ],
+  "removed": [
+    "pub-ivwf_S_x_VIDEO"
+  ],
+  "changed": [
+    "docid-1112024071_S_123_VIDEO"
+  ],
+  "new_categories": [],
+  "removed_categories": [],
+  "changed_showcases": [],
+  "total_videos": 4099,
+  "total_categories": 175
+}

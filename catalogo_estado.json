@@ -22101,9 +22101,9 @@
         "Producciones audiovisuales / De tiempos bíblicos"
       ]
     },
-    "pub-ivwf_S_x_VIDEO": {
+    "pub-ivwf_S_1_VIDEO": {
       "title": "“Andamos por fe y no por vista”",
-      "url": "https://cfp2.jw-cdn.org/a/f562b29/3/o/ivwf_S_r720P.mp4",
+      "url": "https://cfp2.jw-cdn.org/a/76f60b/1/o/ivwf_S_01_r720P.mp4",
       "quality": "720p",
       "categories": [
         "Producciones audiovisuales / De tiempos bíblicos"
@@ -28088,6 +28088,15 @@
         "Videos con audiodescripciones / Reuniones semanales"
       ]
     },
+    "docid-1112024071_S_123_VIDEO": {
+      "title": "2026 | Informe 7 del Cuerpo Gobernante (con audiodescripciones)",
+      "url": "https://cfp2.jw-cdn.org/a/ee6954e/3/o/1112024071_S_cnt_123_r720P.mp4",
+      "quality": "720p",
+      "categories": [
+        "Videos con audiodescripciones / JW Broadcasting",
+        "Videos con audiodescripciones / Reuniones semanales"
+      ]
+    },
     "pub-jwbai_S_201509_101_VIDEO": {
       "title": "Aprovecha al máximo tu soltería (con audiodescripciones)",
       "url": "https://cfp2.jw-cdn.org/a/58fb808/1/o/jwbai_S_201509_101_r720P.mp4",
@@ -28179,14 +28188,6 @@
       "categories": [
         "Videos con audiodescripciones / Asamblea regional 2026 | Felices para siempre",
         "Videos con audiodescripciones / Las buenas noticias según Jesús"
-      ]
-    },
-    "docid-1112024071_S_123_VIDEO": {
-      "title": "2026 | Informe 7 del Cuerpo Gobernante (con audiodescripciones)",
-      "url": "https://cfp2.jw-cdn.org/a/ee6954e/3/o/1112024071_S_cnt_123_r720P.mp4",
-      "quality": "720p",
-      "categories": [
-        "Videos con audiodescripciones / JW Broadcasting"
       ]
     },
     "pub-jwb-143_S_102_VIDEO": {
